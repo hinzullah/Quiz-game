@@ -15,17 +15,35 @@ const App = () => {
     setQuestions(questionsData);
   }, []);
 
-
   const handleAnswer = (option) => {
     if (showFeedback) return;
-
 
     setSelectedOption(option);
     if (option === questions[currentIndex].answer) {
       setScore((prev) => prev + 1);
     }
 
-    
+    setShowFeedback(true);
+    setTimeout(() => {
+      if (currentIndex + 1 < questions.length) {
+        setCurrentIndex((prev) => prev + 1);
+        setSelectedOption(null);
+        setShowFeedback(false);
+      } else {
+        setGameOver(true);
+      }
+    }, 1000);
+  };
+
+  const restartGame = () => {
+    setCurrentIndex(0);
+    setSelectedOption(null);
+    setScore(0);
+    setShowFeedback(false);
+    setGameOver(false);
+  };
+
+  if (questions.length === 0) return <div>Loading...</div>;
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">

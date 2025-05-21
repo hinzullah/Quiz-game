@@ -10,11 +10,22 @@ const App = () => {
   const [showFeedback, setShowFeedback] = useState(false);
   const [gameOver, setGameOver] = useState(false);
 
+  //Will fetch questions from json file
   useEffect(() => {
     setQuestions(questionsData);
   }, []);
 
-  if (questions.length === 0) return <div>Loading...</div>;
+
+  const handleAnswer = (option) => {
+    if (showFeedback) return;
+
+
+    setSelectedOption(option);
+    if (option === questions[currentIndex].answer) {
+      setScore((prev) => prev + 1);
+    }
+
+    
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">

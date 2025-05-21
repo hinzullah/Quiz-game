@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Trainer Marking Language",
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "Hyperlink and Text Markup Language"
+    ],
+    "answer": "HyperText Markup Language"
+  },
+  {
+    "id": 2,
+    "question": "What is the correct file extension for JavaScript files?",
+    "options": [".js", ".java", ".javascript", ".jsx"],
+    "answer": ".js"
+  },
+  {
+    "id": 3,
+    "question": "Which company developed the React library?",
+    "options": ["Google", "Facebook", "Microsoft", "Amazon"],
+    "answer": "Facebook"
+  },
+  {
+    "id": 4,
+    "question": "Which language is primarily used for styling web pages?",
+    "options": ["HTML", "JQuery", "CSS", "XML"],
+    "answer": "CSS"
+  },
+  {
+    "id": 5,
+    "question": "Which of the following is a JavaScript framework?",
+    "options": ["Laravel", "Django", "React", "Ruby on Rails"],
+    "answer": "React"
+  },
+  {
+    "id": 6,
+    "question": "What does API stand for?",
+    "options": [
+      "Application Programming Interface",
+      "Advanced Programming Index",
+      "Application Page Interface",
+      "Automatic Program Installer"
+    ],
+    "answer": "Application Programming Interface"
+  },
+  {
+    "id": 7,
+    "question": "Which tag is used to link a CSS file to an HTML document?",
+    "options": ["<script>", "<link>", "<style>", "<css>"],
+    "answer": "<link>"
+  },
+  {
+    "id": 8,
+    "question": "What is the most popular version control system?",
+    "options": ["Git", "Subversion", "Mercurial", "CVS"],
+    "answer": "Git"
+  },
+  {
+    "id": 9,
+    "question": "What is the purpose of a database?",
+    "options": [
+      "To style web pages",
+      "To store and manage data",
+      "To create animations",
+      "To edit images"
+    ],
+    "answer": "To store and manage data"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following is NOT a programming language?",
+    "options": ["Python", "HTML", "Java", "C++"],
+    "answer": "HTML"
+  }
+]
